@@ -3,17 +3,24 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement , reset} from './store/features/counterSlice';
 import {change} from "./store/features/user"
+import Color from './components/Color';
+
 
 function App() {
-  const count = useSelector((state) => state.counter.value);
-  const user = useSelector((state) => state.user.value);
+  const { count, user,color } = useSelector((state) => ({
+    count: state.counter.count,
+    user: state.user.value,
+  }));
+  
   const dispatch = useDispatch();
-  console.log(dispatch)
+
 
   return (
     <div>
-
+        <Color />
+        <br />
       
+     
       <h1>Counter: {count}</h1>
       <button onClick={() => dispatch(increment())}>Increment</button>
       <button onClick={() => dispatch(reset())}>reset</button>
