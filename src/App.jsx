@@ -12,8 +12,9 @@ function App() {
 
 
   return (
-   <div>
-    <NavBar />
+   <div className=''>
+    
+    <NavBar  />
    </div>
   );
 }
