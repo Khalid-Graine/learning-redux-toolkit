@@ -11,7 +11,7 @@ function App() {
   // const { count, user } = useSelector((state) => (
   //   console.log(state)
   // ));
-
+  console.log(useSelector((x) => console.log(x.cart)))
   // const [name,setName] = useState(user);
   // const dispatch = useDispatch();
 
