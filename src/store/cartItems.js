@@ -8,9 +8,9 @@ const cartItems = [
   },
   {
     id: 'recB6qcHPxb62YJ75',
-    title: 'google pixel',
+    title: 'SAMSUNG Galaxy A54',
     price: '499.99',
-    img: 'https://www.cnet.com/a/img/resize/cb3d4ec8f97b9135c6c9fba43b8f24b33de2a45d/hub/2023/10/11/d165b5b5-45de-4089-9050-c39308797271/google-pixel-8-pro-review-cnet-15.jpg?auto=webp&width=1200',
+    img: 'https://m.media-amazon.com/images/I/61A+wkddftL._AC_SX679_.jpg',
     amount: 1,
   },
   {
