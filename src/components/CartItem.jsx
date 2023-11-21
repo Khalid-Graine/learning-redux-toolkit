@@ -1,8 +1,11 @@
 import React from "react";
+import { deleteItem } from "../store/features/cartSlice";
+import { useDispatch } from "react-redux";
 
 const CartItem = ({ item }) => {
+  const dispatch = useDispatch();
   return (
-    <li key={item.id} className="flex justify-between">
+    <li  className="flex justify-between">
     <div className="flex  gap-4">
       <div className=" shadow-md p-1 rounded-sm flex items-center justify-center w-20 h-20 overflow-hidden">
         <img
@@ -15,6 +18,7 @@ const CartItem = ({ item }) => {
       <div>
         <h3 className="font-semibold"> {item.title}</h3>
         <p>{item.price}</p>
+        <button onClick={() => dispatch(deleteItem(item.id))} className="text-red-600">delete</button>
       </div>
     </div>
     <div>

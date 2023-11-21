@@ -13,7 +13,7 @@ const ItemsContainer = () => {
         <div className="mt-5">
           <ul className="container flex flex-col gap-10">
             {cartItems.map((item) => {
-              return <CartItem item={item} />;
+              return <CartItem key={item.id} item={item} />;
             })}
           </ul>
         </div>
