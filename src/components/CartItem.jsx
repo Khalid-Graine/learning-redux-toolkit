@@ -1,5 +1,5 @@
 import React from "react";
-import { deleteItem } from "../store/features/cartSlice";
+import { deleteItem,increase } from "../store/features/cartSlice";
 import { useDispatch } from "react-redux";
 
 const CartItem = ({ item }) => {
@@ -22,7 +22,7 @@ const CartItem = ({ item }) => {
       </div>
     </div>
     <div>
-      <span>+</span>
+      <span onClick={() => dispatch(increase(item.id))} className=" cursor-pointer">+</span>
       <p> {item.amount}</p>
       <span>-</span>
     </div>
