@@ -3,7 +3,7 @@ import NoItemsMessage from "./NoItemsMessage";
 import { useDispatch, useSelector } from "react-redux";
 import CartItem from "./CartItem";
 import { calculTotal } from "../store/features/cartSlice";
-
+import { calculAmount } from "../store/features/cartSlice";
 const ItemsContainer = () => {
   const { cartItems } = useSelector((store) => store.cart);
   const n = cartItems.length;
@@ -11,9 +11,10 @@ const ItemsContainer = () => {
   const dispatch = useDispatch()
   
   useEffect(() => {
-   dispatch(calculTotal())
+   dispatch(calculTotal());
+   dispatch(calculAmount());
   },[cartItems])
-  
+
   return (
     <>
       {n < 1 && <NoItemsMessage />}

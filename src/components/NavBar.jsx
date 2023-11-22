@@ -11,7 +11,6 @@ const NavBar = () => {
       <div className="flex items-center gap-1">
      <span className=" font-bold text-2xl"> {amount}</span>
       <CartIcon />
-      
       </div>
       </div>
      
