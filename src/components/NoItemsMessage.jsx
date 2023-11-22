@@ -2,8 +2,7 @@ import React from "react";
 
 const NoItemsMessage = () => {
   return (
-    <div className="container grid justify-center  mt-10 text-center">
-      <h2>Your Bag</h2>
+    <div className="container grid justify-center  mt-2 text-center">
       <p>is currently Empty</p>
     </div>
   );
