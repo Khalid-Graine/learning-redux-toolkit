@@ -1,10 +1,9 @@
 
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
 import NavBar from './components/NavBar';
 import ItemsContainer from './components/ItemsContainer';
 import Totalbar from './components/Totalbar';
-import { calculTotal } from './store/features/cartSlice';
+
 
 function App() {
   
