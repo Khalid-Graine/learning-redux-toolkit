@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 
 const CartItem = ({ item }) => {
   const dispatch = useDispatch();
+  
   return (
     <li  className="flex justify-between">
     <div className="flex  gap-4">

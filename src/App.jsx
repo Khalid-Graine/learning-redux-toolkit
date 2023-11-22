@@ -8,14 +8,8 @@ import { calculTotal } from './store/features/cartSlice';
 
 function App() {
   
-const dispatch = useDispatch()
-  useEffect(() => {
-   dispatch(calculTotal())
-  },[])
-
-
   return (
-   <div className=''>
+   <div>
     <NavBar  />
     <ItemsContainer />
     <Totalbar />
