@@ -29,9 +29,18 @@ const cartSlice = createSlice({
         if(item.amount>0) {
             item.amount--
         }
+    },
+    calculTotal: (state) => {
+       let amount = 0;
+       let total = 0;
+       state.cartItems.forEach((item) => {
+       total = total + item.price * item.amount;
+       });
+
+       state.total = total;
     }
   },
 });
 
-export const { clearCart, deleteItem,increase,decrease } = cartSlice.actions;
+export const { clearCart, deleteItem,increase,decrease,calculTotal } = cartSlice.actions;
 export default cartSlice.reducer;

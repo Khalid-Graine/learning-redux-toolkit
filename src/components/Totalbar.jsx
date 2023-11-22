@@ -1,15 +1,17 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { clearCart } from "../store/features/cartSlice";
 
 const Totalbar = () => {
     const dispatch = useDispatch()
+    const total = useSelector((store) => store.cart.total);
+   
   return (
     <div className="container flex flex-col gap-4 mb-4">
       <div className="w-full h-[1px] bg-black mt-4"></div>
       <div className="flex justify-between font-semibold ">
         <p>Total</p>
-        <p>0$</p>
+        <p>{total}$</p>
       </div>
       <button onClick={() => dispatch(clearCart())} className="text-red-500  mx-auto border border-red-500 px-4 py-1 rounded-sm">Clear</button>
     </div>
