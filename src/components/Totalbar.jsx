@@ -13,7 +13,7 @@ const Totalbar = () => {
         <p>Total</p>
         <p>{total}$</p>
       </div>
-      <button onClick={() => dispatch(clearCart())} className="text-red-500  mx-auto border border-red-500 px-4 py-1 rounded-sm">Clear</button>
+      <button onClick={() => dispatch(clearCart())} className="text-red-500  mx-auto border border-red-500 px-4 py-1 rounded-sm hover:bg-red-500 hover:text-white">Clear</button>
     </div>
   );
 };

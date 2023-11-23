@@ -8,7 +8,7 @@ import Totalbar from './components/Totalbar';
 function App() {
   
   return (
-   <div>
+   <div className='w-full md:w-6/12 mx-auto'>
     <NavBar  />
     <ItemsContainer />
     <Totalbar />
