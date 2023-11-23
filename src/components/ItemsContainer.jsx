@@ -17,7 +17,7 @@ const ItemsContainer = () => {
 
   return (
     <>
-      <h2 className="text-center font-bold text-xl my-2 mt-3">Your Bag</h2>
+      <h2 className="text-center font-bold text-xl my-2  mt-3">Your Bag</h2>
       {n < 1 && <NoItemsMessage />}
       {n > 0 && (
         <div className="mt-5">

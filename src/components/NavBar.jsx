@@ -5,7 +5,7 @@ import { FaStoreAlt } from "react-icons/fa";
 const NavBar = () => {
   const {amount } = useSelector((s) => s.cart)
   return (
-    <div className=" bg-blue-400">
+    <div className=" bg-[#195851] text-gray-50">
       <div className="container flex justify-between items-center">
       <div className="flex gap-2">
        <FaStoreAlt className="text-2xl" />
