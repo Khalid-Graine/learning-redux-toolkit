@@ -19,15 +19,14 @@ const CartItem = ({ item }) => {
         />
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 items-start ">
         <h3 className="font-semibold"> {item.title}</h3>
         <p>{item.price}$</p>
-        <button onClick={() => dispatch(deleteItem(item.id))} className="text-gray-50 bg-red-500 px-2 rounded">delete</button>
+        <button onClick={() => dispatch(deleteItem(item.id))} className="bg-[#2C195A] text-white px-3 rounded-sm ">delete</button>
       </div>
     </div>
     <div className="flex flex-col items-center justify-between text-2xl">
-      <span onClick={() => dispatch(increase(item.id))} className=" cursor-pointer">
-        {/*  */}
+      <span onClick={() => dispatch(increase(item.id))} className="cursor-pointer">
         <IoChevronUpSharp />
       </span>
       <p className="font-semibold text-2xl"> {item.amount}</p>
