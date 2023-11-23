@@ -23,7 +23,7 @@ const cartItems = [
   {
     id: 'recwTo160XST3PIoW',
     title: 'Iphone 15 ',
-    price: '599.99 ',
+    price: '599.99',
     img: 'https://m.media-amazon.com/images/I/41dVeJ75+mL._AC_SX679_.jpg',
     amount: 0,
   },
