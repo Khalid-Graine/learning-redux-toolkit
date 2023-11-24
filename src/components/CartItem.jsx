@@ -10,6 +10,7 @@ const CartItem = ({ item }) => {
   return (
     <li className="flex justify-between  p-2">
       {/* child 1 */}
+      
       <div className="flex items-center  gap-1">
         {/* picture of the product */}
         <div className="flex items-center justify-center w-20 h-20 overflow-hidden">
