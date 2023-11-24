@@ -9,8 +9,8 @@ const CartItem = ({ item }) => {
 
   return (
     <li className="flex justify-between  p-2">
+
       {/* child 1 */}
-      
       <div className="flex items-center  gap-1">
         {/* picture of the product */}
         <div className="flex items-center justify-center w-20 h-20 overflow-hidden">
@@ -23,14 +23,14 @@ const CartItem = ({ item }) => {
 
         {/* information about the product */}
         <div className="flex flex-col gap-2 items-start ">
-          <h3 className="font-semibold"> {item.title}</h3>
-          <div className="text-[#195A1D] flex gap-1 font-bold">
+          <h3 className="font-semibold uppercase"> {item.title}</h3>
+          <div className="text-[#195A1D] flex  font-bold">
             <p>{item.price}</p>
-            <span>$</span>
+            <span className="ml-[2px]">$</span>
           </div>
           <button
             onClick={() => dispatch(deleteItem(item.id))}
-            className="bg-[#2C195A] text-white px-3 rounded-sm "
+            className="  border border-red-600 text-red-600 px-3 rounded-sm "
           >
             delete
           </button>
@@ -44,7 +44,7 @@ const CartItem = ({ item }) => {
           className="cursor-pointer active:text-gray-400"
         />
 
-        <p className="font-semibold text-2xl">{item.amount}</p>
+        <p className=" font-medium text-lg">{item.amount}</p>
 
         <IoChevronDownSharp
           onClick={() => dispatch(decrease(item.id))}
