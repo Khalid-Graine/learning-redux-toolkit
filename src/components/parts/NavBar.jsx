@@ -1,5 +1,5 @@
 import React from "react";
-import { CartIcon } from "../icons";
+import { CartIcon } from "../../icons";
 import { useSelector } from "react-redux";
 import { FaStoreAlt } from "react-icons/fa";
 const NavBar = () => {

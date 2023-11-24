@@ -4,7 +4,7 @@ const cartItems = [
     title: 'Samsung Galaxy S8',
     price: '399.99',
     img: 'https://m.media-amazon.com/images/I/61Mcj7muZDL._AC_SX679_.jpg',
-    amount: 0,
+    amount: 2,
   },
   {
     id: 'recB6qcHPxb62YJ75',

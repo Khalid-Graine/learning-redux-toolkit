@@ -7,3 +7,6 @@
 .container {
   @apply px-6;
 }
+body {
+  @apply bg-gray-200
+}
