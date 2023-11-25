@@ -47,7 +47,7 @@ The application will be accessible at http://localhost:3000.
 
 
 
-Available Actions
+## Available Actions:
 clearCart: Clears all items from the cart.
 deleteItem: Removes a specific item from the cart.
 increase: Increases the quantity of a specific item in the cart.
