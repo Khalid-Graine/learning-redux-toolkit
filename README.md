@@ -1,9 +1,9 @@
 
 
-Redux Toolkit Cart Project
+# Redux Toolkit Cart Project
 This is a small project created to learn and practice using Redux Toolkit. The project is a simple online store where users can add, remove, and modify the quantity of products in their shopping cart. The main focus is on managing the state of the cart using Redux.
 
-Features
+## Features
 Add products to the cart.
 Remove products from the cart.
 Increase or decrease the quantity of items in the cart.
@@ -18,35 +18,34 @@ npm (Node Package Manager)
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/redux-toolkit-cart.git
-Change into the project directory:
 
-bash
-Copy code
+```sh
+git clone https://github.com/your-username/redux-toolkit-cart.git
+```
+
+Change into the project directory:
+```sh
 cd redux-toolkit-cart
+```
+
+
 Install dependencies:
 
-bash
-Copy code
+
+``` sh
 npm install
+```
+
+
 Run the application:
 
-bash
-Copy code
+```sh
 npm start
+```
+
 The application will be accessible at http://localhost:3000.
 
-Project Structure
-src/: Contains the source code of the project.
-components/: React components used in the application.
-redux/: Redux-related files.
-cartSlice.js: Defines the Redux slice for managing the cart state.
-store.js: Configures the Redux store.
-cartItems.js: Initial data for the products in the store.
-Redux Configuration
-The Redux state for this project is managed using the Redux Toolkit library. The state includes the list of items in the cart, the total amount of items, and the total price. The actions defined in cartSlice.js handle adding, removing, and updating items in the cart.
+
 
 Available Actions
 clearCart: Clears all items from the cart.
